@@ -41,7 +41,7 @@ def update(sno):
         todo.title = title
         todo.desc = desc
         db.session.add(todo)
-        db.session.commit()
+        db.session.commit() 
         return redirect("/")
         
     todo = Todo.query.filter_by(sno=sno).first()
